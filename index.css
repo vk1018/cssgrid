@@ -1,32 +1,63 @@
-.parent{
+
+.container{
     display:grid;
-    width:700px;
+    width:100vw;
     height:100vh;
-    grid-template-columns: 2fr 2fr 1fr;
-    grid-template-rows:1fr 2fr;
-    grid-gap:20px;
-    align-items:stretch;
-    justify-items: stretch; 
-    grid-template-areas: "child1 child1 child1"
-                         "child2 child3 child4";
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows:repeat(6,1fr);
+    grid-gap:10px;
+    grid-template-areas: "child1 child1 child1 child1 child1 child1"
+                          "child2 child3 child4 child5 child5 child5 "
+                          "child2 child6  child6 child7 child7 child7"
+                          "child2 child9 child9 child9 child10 child10"
+                          "child8 child11 child11 child11 child10 child10"
+                          "child12 child12 child12 child12 child12 child12";
 }
 .child1{
-    background-color: aqua;
-    /*grid-column-start:1;*/
-    /*grid-column-end:3;*/ 
-   /* grid-column:1/3;*/
-   grid-row-start:1;
-   grid-row-end:3;
-   grid-area:child1;
-   
+    background-color:blue ;
+    grid-area:child1;
 }
 .child2{
-    background-color: blue;
+    background-color: green;
+    grid-area:child2;
 }
 .child3{
-    background-color:blueviolet;
-
+    background-color: green;
+    grid-area:child3;
 }
 .child4{
-    background-color: brown;
+    background-color:green ;
+    grid-area:child4;
+}
+.child5{
+    background-color: green;
+    grid-area:child5;
+}
+.child6{
+    background-color:blue ;
+    grid-area:child6;
+}
+.child7{
+    background-color: blue;
+    grid-area:child7;
+}
+.child8{
+    background-color: blue;
+    grid-area:child8;
+}
+.child9{
+    background-color:orange ;
+    grid-area:child9;
+}
+.child10{
+    background-color: orange;
+    grid-area:child10;
+}
+.child11{
+    background-color: orange;
+    grid-area:child11;
+}
+.child12{
+    background-color: green;
+    grid-area:child12;
 }
